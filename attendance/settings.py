@@ -61,7 +61,7 @@ ROOT_URLCONF = 'attendance.urls'
 SITE_ID=1
 
 TELEGRAM_BOT_HANDLERS_CONF = "telegramhandler.bot_handlers"
-
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', None)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
