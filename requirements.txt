@@ -3,3 +3,4 @@ psycopg2
 djangorestframework
 markdown       # Markdown support for the browsable API.
 django-filter  # Filtering support
+django-telegram-bot

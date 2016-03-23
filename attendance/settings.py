@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'telegrambot',
 
     'api',
-    
+    'telegramhandler',
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,6 +57,9 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'attendance.urls'
+SITE_ID=1
+
+TELEGRAM_BOT_HANDLERS_CONF = "telegramhandler.bot_handlers"
 
 TEMPLATES = [
     {
